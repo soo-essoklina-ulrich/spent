@@ -61,8 +61,8 @@ public class  ConfigurationSecurityApplication {
 
     private static final String[] SWAGGER_LIST={
             "/api/v1/auth/**",
-            "v3/api-docs/**",
-            "v3/api-docs.yaml",
+            "/v3/api-docs/**",
+            "/v3/api-docs.yaml",
             "/swagger-ui.html",
             "/swagger-ui/**",
     };

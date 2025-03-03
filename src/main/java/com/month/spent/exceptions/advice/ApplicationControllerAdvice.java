@@ -26,8 +26,8 @@ import org.springframework.web.servlet.NoHandlerFoundException;
 
 import static org.springframework.http.HttpStatus.*;
 
-@RestController
-@ControllerAdvice
+//@RestController
+//@ControllerAdvice
 public class ApplicationControllerAdvice {
 
     @ResponseStatus(FORBIDDEN)
