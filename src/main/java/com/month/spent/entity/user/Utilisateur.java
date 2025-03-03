@@ -1,5 +1,6 @@
 package com.month.spent.entity.user;
 
+import com.month.spent.entity.Salaire;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,6 +13,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.time.Instant;
 import java.util.Collection;
+import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -38,6 +40,9 @@ public class Utilisateur implements UserDetails {
 
     @OneToOne(cascade = CascadeType.ALL)
     private Role role;
+
+    @OneToMany
+    private List<Salaire> salaires;
 
 
     @CreationTimestamp
