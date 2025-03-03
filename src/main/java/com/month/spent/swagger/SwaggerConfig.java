@@ -13,8 +13,8 @@ public class SwaggerConfig {
 
     @Bean
     public OpenAPI customOpenAPI() {
-        return new OpenAPI().info(new Info().title("SOOSMART Group API Documentation")
-                        .description("C'est un Api pour la gestion des Facture et des Clients"))
+        return new OpenAPI().info(new Info().title("Dépense Mensuelle API")
+                        .description("C'est un Api pour contemple ces depenses mensuelles"))
                 .addSecurityItem(new SecurityRequirement().addList("bearerAuth"))
                 .components(new Components()
                         .addSecuritySchemes("bearerAuth",
